@@ -211,6 +211,19 @@ Computer Configuration
 | 6D | `whoami` / logon verification | `06d-whoami-verification.png` |
 | 7A | GPO linked to `AhmedLab → Computers` | `07a-gpo-link.png` |
 
+## What I learned
+
+- **DNS is the foundation of AD.** The Windows 10 client could only find the domain once its DNS pointed at the domain controller (192.168.107.10) instead of the VMware gateway.
+- **OU structure drives everything.** Linking the GPO to the Computers OU, not the whole domain, kept the policy scoped to workstations.
+- **Group-based access scales better than per-user access.** Users are placed in department OUs and in IT-Team, HR-Team and Sales-Team security groups, so permissions can be granted to a group once.
+- **Verification matters.** I confirmed the join and authentication with the domain login and `whoami`, not just the success dialog.
+
+## Next steps
+
+- [ ] Add a second domain controller and check replication
+- [ ] Add a file server with shared folders whose permissions come from the security groups
+- [ ] Forward Windows event logs to Wazuh to detect failed logons and privilege changes
+
 ## 11. Conclusion
 
 The completed lab demonstrates a functional small-scale Active Directory environment covering:
