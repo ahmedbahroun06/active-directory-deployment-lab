@@ -240,4 +240,3 @@ The completed lab demonstrates a functional small-scale Active Directory environ
 - Domain authentication
 - Group Policy management
 
-The environment provides a practical demonstration of foundational Windows domain administration suitable for an academic project or portfolio.
