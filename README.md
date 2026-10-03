@@ -7,6 +7,9 @@
 
 > **Windows Server 2022 • AD DS • DNS • OUs • Security Groups • Windows 10 Client • Group Policy**
 
+## Project Summary
+A hands-on Windows enterprise infrastructure lab demonstrating Active Directory deployment, DNS configuration, identity management, Group Policy and domain administration in a VMware environment.
+
 ## 1. Project Overview
 
 This project demonstrates the deployment of a small Windows Active Directory environment using VMware Workstation Pro.
